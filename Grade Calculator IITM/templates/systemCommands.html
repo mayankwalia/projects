@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+System Commands
+{% endblock title %}
+
+{% block body %}
+<label for="GAA">Graded Assignments</label>
+<input type="number" name="" id="GAA">
+<label for="Q1">Quiz 1</label>
+<input type="number" name="" id="Q1">
+<label for="Q2">Quiz 2</label>
+<input type="number" name="" id="Q2">
+<label for="OPPE1">Programming Exam 1</label>
+<input type="number" name="" id="OPPE1">
+<label for="OPPE2">Programming Exam 2</label>
+<input type="number" name="" id="OPPE2">
+<label for="ET">End Term</label>
+<input type="number" name="" id="ET">
+<button type="submit" onclick="compute()">Calculate Grade</button>
+
+<div id="grade">
+
+</div>
+<div id="required">
+    
+</div>  
+<script src="{{url_for('static', filename='sc.js')}}"></script>
+{% endblock body %}

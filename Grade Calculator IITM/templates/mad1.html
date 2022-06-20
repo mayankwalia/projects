@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    
+{% endblock title %}
+
+{% block body %}
+<label for="GAA">Lab Assignments (Best 3/6)</label>
+<input type="number" name="" id="GAA">
+<label for="Q1">Quiz 1</label>
+<input type="number" name="" id="Q1">
+<label for="Q2">Quiz 2</label>
+<input type="number" name="" id="Q2">
+<label for="ET">End Term</label>
+<input type="number" name="" id="ET">
+<button type="submit" onclick="compute()">Calculate Grade</button>
+
+<div id="grade">
+
+</div>
+<div id="required">
+    
+</div>  
+<script src="{{url_for('static', filename='mad1.js')}}"></script>
+{% endblock body %}
